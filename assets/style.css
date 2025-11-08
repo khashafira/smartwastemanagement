@@ -5,6 +5,7 @@
   --green-bg: #eaf5ec;
   --white: #fff;
   --gray: #444;
+  --dark: #131313;
 }
 
 /* ==== GLOBAL RESET ==== */
@@ -730,7 +731,7 @@ footer h2 span {
     margin-bottom: 10px;
   }
 
-/* ==== FIX POSITION FIX (OVERRIDE FINAL VERSION) ==== */
+/* ==== FIX POSITION FIX ==== */
 @media (min-width: 901px) {
 
   .hero {
@@ -812,4 +813,235 @@ footer h2 span {
     order: 2;
     max-width: 50%;
   }
+}
+
+/* ==== IMPACT SECTION ==== */
+.impact {
+  background-color: var(--light);
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.impact h2 {
+  color: var(--green-primary);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.impact p {
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.impact-card {
+  background-color: var(--green-bg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.impact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.impact-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.impact-card h3 {
+  color: var(--green-primary);
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+/* ==== OUR KEY FEATURE ==== */
+.key-feature {
+  background-color: var(--light);
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.key-feature h2 {
+  color: var(--green-primary);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.key-feature p {
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.key-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.key-card {
+  background-color: var(--light);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.key-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  background-color: var(--green-bg);
+}
+
+.key-card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.key-card h3 {
+  color: var(--green-primary);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* ==== HOW IT WORKS ==== */
+.how {
+  background-color: #f8f9f8;
+  padding: 100px 10%;
+  text-align: center;
+  position: relative;
+  z-index: 10; 
+}
+
+.how h2 {
+  color: #0e2f20;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.how p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step {
+  background-color: #ffffff; 
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
+  background-color: var(--green-bg);
+}
+
+.step span {
+  background-color: #0e2f20; 
+  color: #ffffff; 
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.step h4 {
+  color: #0e2f20;
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.step p {
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .how {
+    padding: 60px 5%;
+  }
+  .step {
+    min-height: 150px;
+  }
+}
+
+/* ==== OUR KEY FEATURE ==== */
+.key-feature {
+  background-color: var(--light);
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.key-feature h2 {
+  color: var(--green-primary);
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.key-feature p {
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.key-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.key-card {
+  background-color: var(--light);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.key-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+.key-card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.key-card h3 {
+  color: var(--green-primary);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
