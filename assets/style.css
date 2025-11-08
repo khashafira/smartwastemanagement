@@ -534,3 +534,147 @@ footer h2 span {
     gap: 8px;
   }
 }
+
+/* ==== RESPONSIVE FIX FOR MOBILE (≤ 768px) ==== */
+@media (max-width: 768px) {
+  /* ==== NAVBAR ==== */
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    padding: 12px 5%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn-signup {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  /* ==== HERO SECTION ==== */
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 60px 5%;
+    background: var(--green-bg);
+  }
+
+  .hero-left {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero-right img {
+    max-width: 85%;
+    height: auto;
+  }
+
+  .hero-left h2 {
+    font-size: 26px;
+  }
+
+  .hero-left p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-left .btn-cta {
+    margin-top: 18px;
+  }
+
+  /* ==== ABOUT SECTION ==== */
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .about img {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  /* ==== FEATURE SECTION ==== */
+  .feature {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .feature img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .feature-content {
+    max-width: 100%;
+  }
+
+  /* ==== CONTACT SECTION ==== */
+  .contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .contact img {
+    max-width: 75%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  /* ==== FOOTER ==== */
+  footer {
+    text-align: center;
+    padding: 30px 5%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 15px;
+  }
+
+  .footer-nav,
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .footer-logo h2 {
+    margin-bottom: 10px;
+  }
+}
+
