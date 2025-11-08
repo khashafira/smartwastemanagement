@@ -535,7 +535,7 @@ footer h2 span {
   }
 }
 
-/* ==== RESPONSIVE FIX FOR MOBILE (≤ 768px) ==== */
+/* ==== RESPONSIVE FIX FOR PHONE ==== */
 @media (max-width: 768px) {
   /* ==== NAVBAR ==== */
   header {
@@ -546,9 +546,21 @@ footer h2 span {
   }
 
   nav {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 15px;
+    overflow-x: auto;
+    gap: 10px;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none; 
+  }
+
+  nav a {
+    font-size: 0.85rem;
+    padding: 4px 6px;
+    white-space: nowrap; 
   }
 
   .nav-right {
@@ -558,8 +570,12 @@ footer h2 span {
   }
 
   .btn-signup {
-    padding: 8px 16px;
-    font-size: 0.9rem;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+
+  .lang-switch{
+    font-size: 12px;
   }
 
   /* ==== HERO SECTION ==== */
