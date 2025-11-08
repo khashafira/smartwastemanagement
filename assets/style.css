@@ -544,12 +544,20 @@ footer h2 span {
     gap: 10px;
     padding: 12px 5%;
   }
-
+  
+  .logo{
+    font-size: 20px;
+  }
+  
   nav {
-    flex-wrap: nowrap;
+    display: flex;
     justify-content: center;
-    overflow-x: auto;
-    gap: 10px;
+    align-items: center;
+    flex-wrap: nowrap; 
+    gap: 14px; 
+    overflow-x: auto; 
+    padding: 4px 0;
+    max-width: 100%;
     scrollbar-width: none;
   }
 
@@ -564,19 +572,47 @@ footer h2 span {
   }
 
   .nav-right {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
   }
 
-  .btn-signup {
-    padding: 6px 14px;
-    font-size: 0.85rem;
+  btn-signup,
+  .btn-signin {
+    background: var(--green-primary);
+    color: var(--white);
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
   }
 
+  .btn-signup:hover,
+  .btn-signin:hover {
+    background-color: #25603a;
+    transform: translateY(-2px);
+  }
+  
   .lang-switch{
     font-size: 12px;
+    font-weight: 600;
   }
+
+  .lang-switch a {
+    color: var(--green-primary);
+    text-decoration: none;
+  }
+
+  .lang-switch a.active {
+    color: var(--green-light);
+  }
+}
 
   /* ==== HERO SECTION ==== */
   .hero {
